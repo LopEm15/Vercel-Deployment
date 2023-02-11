@@ -8,6 +8,10 @@ app.get('/', (request, response) => {
     response.send('Hello World!')
 })
 
+app.get('/home', (request, response) => {
+    response.send('Welcome to the home page')
+})
+
 app.listen(PORT, () => {
     console.log(`app listening on port ${PORT}`)
 })
